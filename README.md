@@ -1,10 +1,13 @@
 # 🐍 Noa — AI-Powered Python Learning Platform
 
-An interactive, galaxy-themed Python learning platform with AI tutor Noa, 
-10 progressive levels, coding exercises, quizzes, and progress tracking.
+> *"Master Python through interactive lessons, coding challenges, and personalized guidance"*
+
+A galaxy-themed, game-style Python learning platform with AI tutor Noa, 10 progressive levels, coding exercises, quizzes, and progress tracking.
 
 ## 🌐 Live Demo
 > https://charm-nix-65041137.figma.site/welcome
+
+---
 
 ## ✨ Features
 - 🤖 Noa AI Chatbot — friendly Python tutor assistant
@@ -16,10 +19,12 @@ An interactive, galaxy-themed Python learning platform with AI tutor Noa,
 - 🌌 Galaxy UI — dark purple/pink gradient theme
 - 📱 Responsive Design — works on all devices
 
+---
+
 ## 📊 Curriculum
 
 | Level | Topic | Exercises | Quizzes |
-|---|---|---|---|
+|-------|-------|-----------|---------|
 | 1 | Python Fundamentals | 20 | 20 |
 | 2 | Control Flow & Logic | 25 | 20 |
 | 3 | Loops & Iteration | 25 | 20 |
@@ -31,15 +36,60 @@ An interactive, galaxy-themed Python learning platform with AI tutor Noa,
 | 9 | Error Handling | 20 | 20 |
 | 10 | Object-Oriented Programming | 20 | 20 |
 
+**Total: 225 exercises + 200 quizzes = 425 learning items**
+
+---
+
 ## 🛠️ Tech Stack
-- React, TypeScript, Tailwind CSS
+- React, TypeScript, Vite
+- Tailwind CSS + shadcn/ui
 - Monaco Code Editor
 - localStorage for progress
 - Figma Make
 
-## 🚀 Run Locally
-npm install
-npm run dev
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── main.tsx                      # App entry point
+├── app/
+│   ├── App.tsx                   # Root component
+│   ├── routes.tsx                # App routing
+│   ├── components/
+│   │   ├── AIHelper.tsx          # Noa AI chatbot
+│   │   ├── CodeEditor.tsx        # Interactive code editor
+│   │   ├── QuizSection.tsx       # Quiz component
+│   │   ├── NotesSection.tsx      # Personal notes
+│   │   └── ui/                   # shadcn/ui components
+│   ├── data/
+│   │   └── pythonCurriculum.ts   # All 10 levels content
+│   ├── pages/
+│   │   ├── Root.tsx              # Welcome/onboarding page
+│   │   ├── Dashboard.tsx         # Level selection dashboard
+│   │   ├── LevelPage.tsx         # Learn/Practice/Quiz/Notes
+│   │   └── NotFound.tsx          # 404 page
+│   └── utils/
+│       └── storage.ts            # localStorage progress
+└── styles/
+    ├── index.css                 # Global styles
+    ├── theme.css                 # Galaxy theme variables
+    ├── tailwind.css              # Tailwind config
+    └── fonts.css                 # Font definitions
+```
 
 ---
-*Built with React · TypeScript · Figma Make*
+
+## 🚀 Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+Open http://localhost:5173
+
+---
+
+*Built with React · TypeScript · Vite · Tailwind CSS · Figma Make*
